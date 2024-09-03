@@ -7,7 +7,7 @@
     </head>
     <body>
         <div class="box">
-            <a class="install" href="javascript:try {var currentPage = nowPageNum;} catch {if (window.location.host=='labsafety.kumoh.ac.kr') {alert('오류! 현재 페이지 수를 알 수 없습니다');} else {alert('해당 버튼을 북마크바로 드래그엔 드랍 하세요')} }function goNextPage() {if (currentPage <= totalPageNum) {opener.PageMove2019AfterVersion(currentPage);console.log(`${currentPage} 페이지를 수강완료했습니다.`);currentPage += 1;setTimeout(function() {goNextPage();}, 100);} else {alert('강의 수강이 완료되었습니다!');}}function runKitMacro() {console.log(`현재 ${currentPage} 페이지를 수강중입니다.`);setTimeout(function () {goNextPage();}, 100)}runKitMacro();" title="KOLLA SKIPPER">
+            <a class="install" href='javascript:try {var lastPage = chapterInfo.length; vPassedPage = lastPage - 1; window.location.href = lastPage + ".html?passedPage=" + vPassedPage + "&checkurl=" + lastPage + "&smProgressNo=" + smProgressNo;} catch {}' title="KOLLA SKIPPER">
                 연구실 안전점검 스킵
             </a>
             <a>위 버튼은 북마클릿으로 북마크바로 드래그하여 사용할 수 있습니다.</a>
